@@ -9,11 +9,11 @@ Welcome to Inkpebble's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-   start
+   prime_directive
    chat
-
+   engineering
 
 
 Indices and tables
