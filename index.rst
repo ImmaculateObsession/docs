@@ -14,5 +14,6 @@ Contents:
    prime_directive
    chat
    engineering
+   media
 
 
