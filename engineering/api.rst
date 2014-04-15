@@ -5,7 +5,9 @@ There are currently api endpoints for listing all comics a user has
 access to, as well as editing certain properties of those comics. Check
 back here for info about changing endpoints.
 
-The api is authenticated with username and password (for now).
+The api is authenticated with username and password (for now). If you
+hit the endpoints without authentication, you can only view public
+published comics.
 
 Endpoints:
 
@@ -18,7 +20,7 @@ Examples:
 
     curl https://www.inkpebble.com/comic/api/1/ -u {username}:{password}
 
-    curl -X PUT https://www.inkpebble.com/comic/api/1/ -u {username}:{password} -d '{"alt_text":"Testing the api"}'
+    curl -X PUT https://www.inkpebble.com/comic/api/1/ -u {username}:{password} -d '{"alt_text":"Testing the api"}' -H "Content-Type: application/json"
 
 Eventually, these endpoints will probably change, and grow. If you want 
 more features, ping Philip.
